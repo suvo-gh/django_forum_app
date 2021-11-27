@@ -1,0 +1,111 @@
+/************
+Common
+***********/
+
+html, body{
+    height: 100%;
+    background-color: thistle;
+}
+
+.content{
+    max-width: 600px;
+    height: 100%;
+    margin: 0 auto;
+    border-left: 1px solid rgba(204, 204, 204, 0);
+    border-right: 1px solid rgba(204, 204, 204, 0);
+}
+
+/**********
+Posts
+**********/
+
+.post_form{
+    padding: 20px 40px;
+    border-bottom: 1px solid rgb(2, 2, 2);
+}
+
+.post_form input{
+    width:70%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid rgb(5, 5, 5);
+}
+
+.post_form textarea{
+    width:70%;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.posts ul{
+    padding: 0;
+    margin: 5px 5px;
+}
+
+.posts li{
+    display: flex;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding: 0;
+    position: relative;
+}
+
+.posts li .menu_icon{
+    width: 30px;
+    position: absolute;
+    right: 26px;
+    top: 12px;
+}
+
+.posts li .menu {
+    display: none;
+    position: absolute;
+    top: 36px;
+    right: 15px;
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 13px;
+}
+
+.posts li .menu a{
+    text-decoration: none;
+    text-shadow: grey;
+    color: rgba(0, 77, 66, 0.87);
+}
+
+.posts li .logo{
+    flex-basis: 20%;
+}
+
+.posts li .logo img {
+    width: 40%;
+    margin-left: 42px;
+    margin-top: 16px;
+}
+
+.posts li .name_body {
+    flex-basis: 55%;
+    margin-top: 10px;
+}
+
+.posts li .name_body .name{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.posts li .name_body .datetime{
+    color: grey;
+    font-size: 11px;
+    margin-top: 2px;
+}
+
+.posts li .name_body .body_cont{
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 700px){
+    .posts li .name_body .name{
+        font-size: 20px;
+    }
+    
+}
